@@ -98,6 +98,6 @@ window.onload=function(){
   cdown.add(new Date(2022, 1, 23, 03, 03, 03), "shield", "Свет.");
 	cdown.add(new Date(2022, 2, 8, 04, 04, 04), "spring", "Женщинам. С цветущим праздником очарования и красоты.");
 	cdown.add(new Date(2022, 3, 25, 05, 05, 05), "dead", "<a href='../rip'>Легенду</a>.");
-	cdown.add(new Date(2021, 4, 09, 06, 06, 06), "victory", "День Победы.");
+	cdown.add(new Date(2022, 4, 09, 06, 06, 06), "victory", "День Победы.");
 	cdown.add(new Date(2021, 5, 19, 07, 07, 07), "growth", "<a href='../old#birth'>День рождения</a>.");
 };
