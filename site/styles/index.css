@@ -1,0 +1,511 @@
+@charset "utf-8";
+/*
+До этого мига можно смело забыть всё, что было известно о вёрстке.
+Поиграем не в своей лиге...
+*/
+
+/* common-reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-spacing: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: #fff;
+  color: #1A1A1A; /* RGB 10% */
+  font: 50px Arial, Verdana, Helvetica, sans-serif;
+}
+
+body h1,
+body h2,
+body p,
+body img,
+body video,
+body iframe,
+body audio,
+body details,
+body ul {
+  padding-bottom: 20px;
+}
+
+body img {
+  padding-right: 20px;
+}
+
+body details {
+  padding-top: 20px;
+}
+
+body h1 {
+  font-size: 100px;
+}
+
+body h2 {
+  font-size: 75px;
+}
+
+body h1,
+body h2 {
+  font-weight: bold;
+}
+
+body img {
+  width: 47%; /* 45% > 40% */
+  vertical-align: top;
+}
+
+body video,
+.frame,
+.video {
+  width: 100%;
+}
+
+body a,
+body a:link,
+body a:hover,
+body a:active,
+body a:focus,
+body a:visited,
+body li::marker {
+  color: #21a038; /* old: 0cb45a */
+}
+
+body a,
+body a:link,
+body a:hover,
+body a:active,
+body a:focus,
+body a:visited {
+  border-bottom: solid 3px;
+}
+
+.content {
+  transition: background .3s ease, color .3s ease;
+}
+
+.dark {
+  background: #333; /* RGB 20% */
+  color: #E6E6E6; /* RGB 90% */
+}
+
+.light {
+  background-color: transparent;
+  color: rgb(255, 0, 0); /* Alt theme color (red) */
+}
+
+.main {
+  padding: 150px;
+}
+
+.one {
+  background: rgb(0, 0, 0, .1);
+}
+
+.two {
+  background-color: rgb(0, 0, 0, .2);
+}
+
+.logo {
+  /* height: 40%; */
+  min-width: 250px;
+  min-height: 250px;
+  max-width: 500px;
+  max-height: 500px;
+  float: right;
+}
+
+.logo,
+.fun,
+.space {
+  animation: hue 3s linear infinite;
+}
+
+.logo:hover,
+.xmas:hover,
+.love:hover,
+body summary {
+  cursor: pointer;
+}
+
+.sub {
+  margin-top: 100px;
+}
+
+.image,
+.image:link,
+.image:hover,
+.image:active,
+.image:focus,
+.image:visited {
+  border: none;
+  outline: 0;
+}
+
+.frame {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin-bottom: 20px;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+/* nav-start */
+.nav {
+  position: fixed;
+  z-index: 1;
+}
+
+.nav-menu {
+  display: none;
+  max-width: 80%;
+  background-color: rgba(0, 0, 0, .7);
+  border-top-right-radius: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-top: 20px;
+  padding-left: 20px;
+  color: #ff0;
+}
+
+.nav-switch {
+  display: inline-block;
+  animation: sweep .3s ease-out;
+}
+
+.nav-menu a {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.nav-link,
+.nav-link:link,
+.nav-link:visited,
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {
+  border-bottom: solid 3px;
+}
+
+.nav-action,
+.nav-action:link,
+.nav-action:visited,
+.nav-action:hover,
+.nav-action:active,
+.nav-action:focus {
+  border-bottom: dashed 3px;
+}
+
+.nav-link,
+.nav-link:link,
+.nav-link:visited {
+  color: #0f0;
+}
+
+.nav-action,
+.nav-action:link,
+.nav-action:visited {
+  color: #0ff;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus,
+.nav-action:hover,
+.nav-action:active,
+.nav-action:focus {
+  color: #fff;
+}
+
+.nav-button {
+  width: auto;
+  height: auto;
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 150px;
+  max-height: 150px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  opacity: .5;
+  transition: .5s ease-in-out;
+  animation: load 1s ease-in-out;
+}
+
+.nav-button,
+.nav-menu a {
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  opacity: 1;
+  transform: rotate(585deg); /* 225 */
+}
+/* nav-end */
+
+/* page-log-start */
+body summary {
+  display: inline;
+  color: #21a038;
+  border-bottom: dashed 3px;
+  outline: none;
+  list-style: none;
+}
+
+body summary::-webkit-details-marker {
+  display: none;
+}
+
+body ul,
+body li {
+  list-style-type: disc;
+}
+
+body del {
+	text-decoration: solid line-through #f00; /* 5px; Value Error 5px is not a text-decoration value */
+}
+
+body details[open] summary ~ * {
+  animation: sweep .3s ease-out;
+}
+/* page-log-end */
+
+/* page-fun-start */
+.fun {
+  height: 1200px;
+  background: url(../design/fun_bg.jpg), linear-gradient(233deg, #e56420, #c22525, #3d9c31, #37bbde);
+  background-blend-mode: hard-light;
+}
+/* page-fun-end */
+
+/* page-xmas-start */
+.xmas {
+  position: relative; /* absolute-positioned example, snow is appended to this element. */
+  overflow: hidden; /* overflow: hidden is recommended for best effect. */
+  background: #369 url(../design/xmas_bg.jpg);
+}
+
+.xmas,
+.love,
+.fun,
+.space {
+  background-size: cover;
+  /* background-attachment: fixed; на мобильном факап */
+}
+
+.xmas,
+.love,
+.defense,
+.bloom,
+.fun,
+.space {
+  color: #fff;
+}
+/* page-xmas-end */
+
+/* page-love-start */
+.love {
+  background: #FF4A26 url(../design/love_bg.jpg); /* E4373C */
+}
+
+.love-image {
+  width: 16%;
+}
+
+.cats-hide {
+  display: none;
+  animation: sweep 1.0s ease-in-out;
+}
+
+.cats-show {
+  display: block;
+}
+/* page-love-end */
+
+/* page-defense-start */
+.defense {
+  background: #696 url(../design/defense_bg.jpg) repeat fixed;
+}
+/* page-defense-end */
+
+/* page-bloom-start */
+.bloom {
+  background: #e84861 url(../design/bloom_bg.jpg) repeat fixed;
+}
+/* page-bloom-end */
+
+/* page-tomb-start */
+.tomb {
+  background: #000 url(../design/rip_blade.png) no-repeat fixed bottom right;
+}
+
+.tomb,
+.tomb a,
+.tomb a:link,
+.tomb a:hover,
+.tomb a:active,
+.tomb a:focus,
+.tomb a:visited {
+  color: #fff;
+}
+/* page-tomb-end */
+
+/* page-win-start */
+.win {
+  background: #DE0000 url(../design/win_bg.png) repeat-y scroll center right 30%;
+  color: #fff;
+}
+/* page-win-end */
+
+/* page-age-start */
+.age {
+  background: #21a038 url(../design/family_logo.png) no-repeat scroll center right 30%;
+}
+
+.age,
+.age a,
+.age a:link,
+.age a:hover,
+.age a:active,
+.age a:focus,
+.age a:visited {
+  color: #fff;
+}
+/* page-age-end */
+
+/* page-space-start */
+.space {
+  background: url(../design/space_bg.jpg), linear-gradient(233deg, #e56420, #c22525, #3d9c31, #37bbde);
+}
+/* page-space-end */
+
+/* page-app-start */
+.app {
+  background: #000;
+  color: #fff;
+}
+
+.app a,
+.app a:link,
+.app a:hover,
+.app a:active,
+.app a:focus,
+.app a:visited,
+.app li::marker,
+.app summary {
+  color: #0f0;
+}
+
+.app-nav {
+  width: 100%;
+  position: fixed;
+  padding: 20px 150px;
+  z-index: 1;
+  background-color: #004000; /* 003000 */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.app-nav a {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.app-one {
+  background: rgb(0, 64, 0, .8);
+}
+
+.app-two {
+  background: rgb(0, 64, 0, .9);
+}
+
+.app-video {
+  width: 47%;
+}
+
+#download {
+  padding-top: 240px;
+}
+
+.flip {
+  transition: transform .3s ease-in-out;
+}
+
+.flip-in {
+  transform: rotateY(90deg);
+}
+
+.flip-out {
+  transform: rotateY(0deg);
+}
+/* page-app-end */
+
+/* shadow — тень для текста */
+.shadow {
+  /* text-shadow: #000 1px 0 10px; color | offset-x | offset-y | blur-radius */
+  text-shadow:
+  0 0 10px #000,
+  0 0 10px #000,
+  0 0 10px #000;
+}
+
+/* load — раскадровка загрузки */
+@keyframes load {
+  0% {
+    opacity: 0;
+    transform: rotate(585deg);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .5;
+    transform: rotate(0);
+  }
+}
+
+/* hue — анимация переливающегося оттенка */
+@keyframes hue {
+  from {
+    filter: hue-rotate(0);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* sweep — анимация появления */
+@keyframes sweep {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* GOD MODE */
+/*
+* {
+  border: solid 1px #0f0;
+}
+*/
+
+/*
+И вот так это делается.
+Скоро здесь появится следующий код и пароль, стей тюн.
+*/

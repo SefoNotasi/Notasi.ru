@@ -1,0 +1,800 @@
+<!--
+Вау, какие люди!
+Вот уж кого действительно не ожидал увидеть андерхуд...
+Добро пожаловать в «Нотаси Веб Кастомс».
+Мы тут делаем РИЛ ФИНГС с 2009 года.
+Ну что стоишь, заходи давай, тебе понравится.
+Наша философия заключается в том, что сайт должен доставлять не только внешним видом, но и красотой инсайд.
+А теперь позволь представить наш свежесвёрстанный МАСТЕРПИС:
+-->
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sefo Notasi | Веб-рассказ</title>
+    <meta name="description" content="История о Легенде первого ранга, которую поглотила Тьма." />
+    <meta name="keywords" content="Сефо, Нотаси, СефоНотаси, сайт, домашняя, страница, Sefo, Notasi, SefoNotasi, site, homepage" />
+    <meta name="author" content="Сефо Нотаси" />
+    <meta name="generator" content="Блокнот и руки 1.0" />
+    <meta name="viewport" content="width=1000px, initial-scale=0.4" />
+    <meta content="true" name="HandheldFriendly" />
+    <meta content="width" name="MobileOptimized" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <link rel="stylesheet" href="../site/styles/old.css" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../site/favicon/apple-touch-icon.png?v=rMB8jvoPyJ">
+    <link rel="icon" type="image/png" sizes="32x32" href="../site/favicon/favicon-32x32.png?v=rMB8jvoPyJ">
+    <link rel="icon" type="image/png" sizes="16x16" href="../site/favicon/favicon-16x16.png?v=rMB8jvoPyJ">
+    <link rel="manifest" href="../site/favicon/site.webmanifest?v=rMB8jvoPyJ">
+    <link rel="mask-icon" href="../site/favicon/safari-pinned-tab.svg?v=rMB8jvoPyJ" color="#21a038">
+    <link rel="shortcut icon" href="../site/favicon/favicon.ico?v=rMB8jvoPyJ">
+    <meta name="msapplication-TileColor" content="#21a038">
+    <meta name="msapplication-config" content="../site/favicon/browserconfig.xml?v=rMB8jvoPyJ">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicon -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169837023-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-169837023-1');
+    </script>
+    <!-- VK -->
+    <!--<script src="https://vk.com/js/api/openapi.js?168"></script>-->
+    <!-- VK -->
+  </head>
+  <body>
+    <!-- Yandex.Metrika counter -->
+    <script>
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+       ym(62728024, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+       });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/62728024" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!--LiveInternet counter-->
+    <script>
+    new Image().src = "//counter.yadro.ru/hit?r"+
+    escape(document.referrer)+((typeof(screen)=="undefined")?"":
+    ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+    screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+    ";h"+escape(document.title.substring(0,150))+
+    ";"+Math.random();
+    </script>
+    <!--/LiveInternet-->
+    <!-- VK Widget -->
+    <!--<div id="vk_community_messages"></div>
+    <script>
+    VK.Widgets.CommunityMessages("vk_community_messages", 193391211, {widgetPosition: "left",disableExpandChatSound: "1",disableNewMessagesSound: "1",disableButtonTooltip: "1"});
+    </script>-->
+    <!-- VK Widget -->
+    <!--<script src="../site/scripts/common_scroll.js"></script>-->
+    <script src="../site/scripts/common_audio.js"></script>
+    <script src="../site/scripts/nav_menu.js"></script>
+    <script src="../site/scripts/nav_pause.js"></script>
+    <script src="../site/scripts/nav_random.js"></script>
+    <script src="../site/scripts/family_counter.js"></script>
+    <!--<script src="../site/scripts/dev_load.js"></script>-->
+    <!--<script src="../site/scripts/time_expires.js"></script>-->
+    <div class="nav">
+      <img class="nav-button" onclick="menu()" src="../site/design/nav_button.png" title="Нотасия" alt="Нотасия" width="100" height="100" />
+      <div id="nav-menu" class="nav-menu">
+        <a href="#map">Карта</a>
+        <a onclick="stop()">Выкл. музыку</a>
+        <a onclick="teleport(); return false;">Червоточина</a>
+        <a href="../">На главную</a>
+      </div>
+    </div>
+    <div id="family" class="family">
+      <div class="family-header effect-light-black">Я здесь. Вновь. Для тебя.</div>
+      <div class="family-main effect-heart" title="Сердце Семьи Нотаси"></div>
+      <div class="family-footer">
+        <span id="counter" class="effect-stealth effect-shadow-white-hover" title="–∞ ♥"><span id="years">00</span><span class="timeRefYears">•</span><span id="days">00</span><span class="timeRefDays">•</span><span id="hours">00</span><span class="timeRefHours">:</span><span id="minutes">00</span><span class="timeRefMinutes">:</span><span id="seconds">00</span><span class="timeRefSeconds"></span></span>
+      </div>
+    </div>
+    <div class="map">
+      <div class="map-main">
+        <p class="map-sub">К ним, три года спустя...</p>
+        <p>Плохие новости: я отключил вам скролл, а ещё утилизировал свою команду, но о последнем чуть позже... А сейчас нам понадобится карта, которая когда-то была самой бестолковой и ненужной здесь вещью.</p>
+        <p>Я проведу вас сквозь тернии Тьмы к истокам Света.</p>
+        <p>Ну что, пристёгивайтесь покрепче, верстать буду быстро, грубо и самобытно. Всё как мы любим. Смотреть на страницы будем с высоты трёхлетней давности.</p>
+        <p>Полетели!</p>
+        <p>И вот ещё что, отныне не на ты, а к вам.</p>
+        <p>Здесь я с гостями, а персонажи лично с тобой.</p>
+        <h1 id="map">Карта</h1>
+        <ol>
+          <li><a href="#family">Наши дни</a>.</li>
+          <li>Мы сейчас где-то здесь.</li>
+          <li><a href="#links">Плитки, распишитесь</a>.</li>
+          <li><a href="#stage">Сцена Театра</a>.</li>
+          <li><a href="#check">Я предупреждал</a>.</li>
+          <li><a href="#night">Последняя фантазия</a>.</li>
+          <li><a href="#news">Газета</a>.</li>
+          <li><a href="#diary">Дорогой дневник</a>.</li>
+          <li><a href="#arts">Галерея</a>.</li>
+          <li>«<a href="#records">О, ты такая Чертовски Святая Звукозапись!</a>».</li>
+          <li><a href="#tv">А что там по кабельному?</a></li>
+          <li><a href="#dev">Как проснуться?</a></li>
+          <li><a href="#avemarine">Мария и Кария</a>.</li>
+          <li><a href="#birth">День рождения</a>.</li>
+          <li><a href="#card">Голуби накормлены?</a></li>
+          <li><a href="#city">Ношимвиль</a>.</li>
+          <li><a href="#bar">Подпольный бар</a>.</li>
+          <li>???</li>
+          <li><a href="#time">Срок годности</a>.</li>
+          <li><a href="#rip">Его звали</a>.</li>
+          <li><a href="#browser">На грани</a>.</li>
+          <li><a href="#error">Смысл жизни</a>.</li>
+          <li><a href="#wish">Иной мир</a>.</li>
+          <li><a href="#rights">Он самый</a>.</li>
+        </ol>
+      </div>
+    </div>
+    <div id="links" class="links">
+      <div class="links-button links-mail">
+        <p class="links-logo">Mail</p>
+        <p><a href="mailto:sefonotasi@gmail.com">SefoNotasi@gmail.com</a></p>
+        <p class="links-info">Реально читаю, лучше почты ничего ещё не придумали.</p>
+      </div>
+      <div class="links-button links-goodgame">
+        <p class="links-logo">GoodGame</p>
+        <p><a href="https://goodgame.ru/channel/sefonotasi">goodgame.ru/channel/SefoNotasi</a></p>
+        <p class="links-info">Не трогать, настаивается!</p>
+      </div>
+      <div class="links-button links-telegram">
+        <p class="links-logo">Telegram</p>
+        <p><a href="https://t.me/sefontasi">t.me/SefoNotasi</a></p>
+        <p class="links-info">Канал — поток сознания.</p>
+      </div>
+      <div class="links-button links-youtube">
+        <p class="links-logo">YouTube</p>
+        <p><a href="https://www.youtube.com/sefonotasi">youtube.com/SefoNotasi</a></p>
+        <p class="links-info">Брошены Легенде™ и вот это вот всё.</p>
+      </div>
+      <div class="links-button links-twitch">
+        <p class="links-logo">Twitch</p>
+        <p><a href="https://www.twitch.tv/sefonotasi">twitch.tv/SefoNotasi</a></p>
+        <p class="links-info">Ещё не настоялось.</p>
+      </div>
+      <div class="links-button links-instagram">
+        <p class="links-logo">Instagram</p>
+        <p><a href="https://www.instagram.com/sefonotasi">instagram.com/SefoNotasi</a></p>
+        <p class="links-info">И снимать закаты на фоне панелек, непременно.</p>
+      </div>
+      <div class="links-button links-twitter">
+        <p class="links-logo">Twitter</p>
+        <p><a href="https://twitter.com/sefonotasi">twitter.com/SefoNotasi</a></p>
+        <p class="links-info">Когда-нибудь научусь твитить, честно-честно.</p>
+      </div>
+      <div class="links-button links-vk">
+        <p class="links-logo">VK</p>
+        <p><a href="https://vk.com/sefonotasi">vk.com/SefoNotasi</a></p>
+        <p class="links-info">Группа — музыка, клипы, подборки.</p>
+      </div>
+      <div class="links-button links-steam">
+        <p class="links-logo">Steam</p>
+        <p><a href="https://steamcommunity.com/groups/sefonotasi">steamcommunity.com/groups/SefoNotasi</a></p>
+        <p class="links-info">Сообщество, ага, конечно.</p>
+      </div>
+      <div class="links-button links-klavogonki">
+        <p class="links-logo">Клавогонки</p>
+        <p><a href="https://klavogonki.ru/u/#/597619/">klavogonki.ru/u/#/597619</a></p>
+        <p class="links-info">Но во что-то же я катаю.</p>
+      </div>
+      <div class="links-button links-skype">
+        <p class="links-logo">Skype</p>
+        <p><a href="https://join.skype.com/invite/dRyLhfCQSvnL">Позвонить</a></p>
+        <p class="links-info">Или все уже давно в дискорде сидят?</p>
+      </div>
+      <div class="links-button links-tumblr">
+        <p class="links-logo">Tumblr</p>
+        <p><a href="https://sefonotasi.tumblr.com">SefoNotasi.tumblr.com</a></p>
+        <p class="links-info">Ха-ха, классика...</p>
+      </div>
+      <div class="links-button links-livejournal">
+        <p class="links-logo">LiveJournal</p>
+        <p><a href="https://sefonotasi.livejournal.com">SefoNotasi.livejournal.com</a></p>
+        <p class="links-info">А что, так можно было?</p>
+      </div>
+      <div class="links-button links-facebook">
+        <p class="links-logo">Facebook</p>
+        <p><a href="https://www.facebook.com/sefonotasi">facebook.com/SefoNotasi</a></p>
+        <p class="links-info">Аська ещё была: 3-500-900.</p>
+      </div>
+      <div class="links-button links-patreon">
+        <p class="links-logo">Patreon</p>
+        <p><a href="https://www.patreon.com/sefonotasi">patreon.com/SefoNotasi</a></p>
+        <p class="links-info">Безусловно, подписки, угу.</p>
+      </div>
+      <div class="links-button links-soundcloud">
+        <p class="links-logo">SoundCloud</p>
+        <p><a href="https://soundcloud.com/sefonotasi">soundcloud.com/SefoNotasi</a></p>
+        <p class="links-info">Как-то же надо сайт индексировать.</p>
+      </div>
+    </div>
+    <div id="stage" class="stage">
+      <div class="stage-left effect-switch" title="— Разломай тут всё к чертям!"></div>
+      <div class="stage-header" title="Когда-то здесь был вход"></div>
+      <div class="stage-right effect-switch" title="— Мы что, висим в воздухе?!"></div>
+      <div class="stage-main">Тем посвящается, кто рассказ сей полюбил и все события на яву узрел. Приготовьтесь вернуться туда ещё раз...</div>
+    </div>
+    <div id="check" class="check">
+      <div class="check-header">Здесь был дисклеймер и раскаты молнии, которые вас напрягали. Все персонажи чертовски мертвы. Все события являются отравленными плодами искаженного воображения. Любое совпадение — иллюзия. Я предупредил.</div>
+      <div class="check-main" title="— Я уже дважды промокла, чего же ты ждешь?"></div>
+    </div>
+    <div id="night" class="night">
+      <div class="night-header" title="Последняя фантазия"></div>
+      <div class="night-main">Здесь сбываются загаданные желания, дерзайте.</div>
+    </div>
+    <hr id="news" class="nav-stub" />
+    <div class="news">
+      <div class="news-container">
+        <div class="news-header">The Noshimo Times</div>
+        <div class="news-left">
+          <p>Последний выпуск № 9</p>
+        </div>
+        <div class="news-center">
+          <p>2012–2020</p>
+        </div>
+        <div class="news-right">
+          <p>9 мая 2020 года</p>
+        </div>
+        <div class="news-one">
+          <h1>Тюнинг</h1>
+          <p>Да, да, вам не послышалось, теперь при включении следующего трека, предыдущий останавливается. Эту фичу просили все, без исключений. Всего-то понадобилось 10 лет на реализацию.</p>
+        </div>
+        <div class="news-two">
+          <h1>Фидбек</h1>
+          <p>Я аккумулировал и учёл весь фидбек, который удалось вспомнить. Ничто и никто не забыт. Этот многострадальный сайт никогда не стал бы таким без обратной связи. Спасибо всем, кто откликнулся.</p>
+        </div>
+        <div class="news-three">
+          <h1>Капитан</h1>
+          <p>Карта отныне выполняет своё прямое назначение, кто бы мог подумать? Это было одним из самых дерзких нововведений, которое я со крипом зубьев принял. И да, от неё по-прежнему веет временами Народа.ру.</p>
+        </div>
+        <div class="news-main">
+          <p>Настоялось ли всё сейчас, сейчас готово или такое себе?</p>
+        </div>
+        <div class="news-four">
+          <h1>Саундтрек</h1>
+          <p>Музыка на каждой второй странице явно была лишняя, особенно учитывая, что её нельзя было остановить следующей композицией. Хотя думаю, что плеер органично вписался бы сюда. Я всё ещё мечтаю написать собственный саундтрек для сайта...</p>
+        </div>
+        <div class="news-five">
+          <h1>Пасхалки</h1>
+          <p>Всё, что было окутано мраком и тенью тайны, отныне стало явью. И в самом деле, по статистике единицы находили пасхалки, и то, с моими подсказками. Но не волнуйтесь, кое-что я всё-таки припрятал здесь.</p>
+        </div>
+        <div class="news-six">
+          <h1>Ностальгия</h1>
+          <p>Помню, как вы объясняли мне, что такое поля у газеты и что такое полароид. А я потом тайком изучал и вдохновлялся настоящим выпуском The Times. И вот мы читаем победоносный выпуск...</p>
+        </div>
+        <div class="news-footer">
+          <p>У нас была самая лучшая реклама — реклама, которой нет.</p>
+        </div>
+        <div class="news-seven">
+          <h1>Оставленные</h1>
+          <p>Телевизор теперь действительно показывает передачу. Для этого торжественного события я снял заключительный эпизод легендарной саги Оставленных для Легенды.</p>
+        </div>
+        <div class="news-eight">
+          <h1>Аркада</h1>
+          <p>Сомнительный игровой автомат отправился на свалку. Может когда-нибудь модернизируем его? За прошедшие года веб версия Авемарины сломалась.</p>
+        </div>
+        <div class="news-nine">
+          <h1>Штрихи</h1>
+          <p>Я посадил «сову» из шапки праздничной страницы в клетку и переосмыслил визитку. Радио и рассказы были упразднены.</p>
+        </div>
+      </div>
+    </div>
+    <div class="news-spoiler">
+      <h1>÷0</h1>
+      <p>Мне очень жаль, но текущее разрешение поделило газету на ноль. Растяните экран хотя бы на тысячу пикселей.</p>
+    </div>
+    <div id="diary" class="diary">
+      <div class="diary-header">Noshimo was here 2017</div>
+      <div class="diary-main">
+        <h1>Последняя запись</h1>
+        <p>Дорогой дневник, когда я сверстал тебя, сами панельки Москвы прошептали это имя… Я думал, что каждая запись будет начинаться с этого трогательного обращения. Но за десять <del>тысяч</del> лет, я так и не научился вести свой бортовой журнал. А когда спохватился, то было уже поздно. Теперь мой поток сознания транслируется в телеграм канале.</p>
+        <p>Вся трудность моих рассказов заключается в том, что так или иначе, они начинаются задним числом. Я всегда спешу, а ты опаздываешь и никто, никогда не бежит друг к другу на встречу. Похоже, что мы пересечёмся лишь в Ином мире...</p>
+        <p>Наверное, только я могу сделать даже из такого несущественного события — целый спектакль.</p>
+        <p>Что ж, да будет так.</p>
+        <p>Открепляю намертво прибитую запись.</p>
+        <p>Спасибо, что держал мои удары и хранил горькую боль.</p>
+        <p>С трепетом и теплом, твой автор.</p>
+        <h1 id="train">Бронепоезд — Конечная</h1>
+        <p>«Просьба освободить вагоны»</p>
+        <p>Госпожа Тьма поглотила всех пассажиров и уничтожила всё на своём пути.</p>
+        <p>Конец рассказа.</p>
+      </div>
+    </div>
+    <div id="arts" class="arts">
+      <div class="arts-main arts-one"><a href="../data/images/AllTogether.jpg"><img src="../data/images/AllTogether.jpg" alt="All Together 1024x768"></a><p>All Together 2012</p></div>
+      <div class="arts-main arts-two"><a href="../data/images/Aronel.jpg"><img src="../data/images/Aronel.jpg" alt="Aronel 1024x768"></a><p>Aronel 2008</p></div>
+      <div class="arts-main arts-three"><a href="../data/images/Loveless.jpg"><img src="../data/images/Loveless.jpg" alt="Loveless 1024x768"></a><p>Loveless 2010</p></div>
+      <div class="arts-main arts-four"><a href="../data/images/ProdigyRat.jpg"><img src="../data/images/ProdigyRat.jpg" alt="Prodigy Rat 1024x768"></a><p>Prodigy Rat 2011</p></div>
+      <div class="arts-main arts-five"><a href="../data/images/BrokenDream.jpg"><img src="../data/images/BrokenDream.jpg" alt="Broken Dream 1024x768"></a><p>Broken Dream 2012</p></div>
+      <div class="arts-main arts-six"><a href="../data/images/DarkLight.jpg"><img src="../data/images/DarkLight.jpg" alt="Dark Light 1024x768"></a><p>Dark Light 2012</p></div>
+      <div class="arts-main arts-seven"><a href="../data/images/Six0.zip"><img src="../data/images/Six0.jpg" alt="Six0 1366x768"></a><p>Six0 2020</div>
+      <div class="arts-eight"><a href="../data/images/Left4Legend.jpg"><img src="../data/images/Left4Legend.jpg" alt="Left 4 Legend 1106x1474"></a></div>
+      <div class="arts-nine"><a href="../data/images/Spray.png"><img src="../data/images/Spray.png" alt="Spray 512x512"></a></div>
+    </div>
+    <div id="records" class="records">
+      <div class="records-left"></div>
+      <div class="records-header effect-switch"></div>
+      <div class="records-right"></div>
+      <div class="records-footer" title="«О, ты такая Чертовски Святая Звукозапись!»">Damn Heavenly Records</div>
+      <div class="records-green"><img class="effect-rotate-clock-hover" src="../site/design/records_logo_left.png" alt="Диск №1" width="400" height="400" /></div>
+      <div class="records-blue"><img class="effect-rotate-coin-hover" src="../site/design/records_logo_right.png" alt="Диск №2" width="400" height="400" /></div>
+      <div class="records-main">
+        <p>Milandro Noshimo — Amona (2016)</p>
+        <p><audio controls>
+          <source src="../data/music/Amona.mp3" type="audio/mpeg; codecs=mp3" />
+          <a href="../data/music/Amona.mp3">Господи, твой позорный браузер даже в музыку не может. Ладно, так уж и быть, качай.</a>
+        </audio></p>
+        <p>Milandro Noshimo — Still Alive (2011)</p>
+        <p><audio controls>
+          <source src="../data/music/StillAlive.mp3" type="audio/mpeg; codecs=mp3" />
+          <a href="../data/music/StillAlive.mp3">Господи, твой позорный браузер даже в музыку не может. Ладно, так уж и быть, качай.</a>
+        </audio></p>
+        <p>Milandro Noshimo — Aronel (2010)</p>
+        <p><audio controls>
+          <source src="../data/music/Aronel.mp3" type="audio/mpeg; codecs=mp3" />
+          <a href="../data/music/Aronel.mp3">Господи, твой позорный браузер даже в музыку не может. Ладно, так уж и быть, качай.</a>
+        </audio></p>
+      </div>
+    </div>
+    <div id="tv" class="tv">
+      <div class="tv-header effect-shadow-black">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iWpKgnGzmN8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="tv-main">
+        <a class="tv-button" href="https://www.youtube.com/sefonotasi">YouTube</a>
+        <a class="tv-button" href="https://www.twitch.tv/sefonotasi">Twitch</a>
+        <a class="tv-button" href="https://goodgame.ru/channel/sefonotasi">GoodGame</a>
+      </div>
+    </div>
+    <div id="dev" class="dev">
+      <div class="dev-footer">
+        <p>Wake up, guest...</p>
+        <p>The Darkness has you...</p>
+        <p>Follow the Emerald Queen.</p>
+      </div>
+      <div class="dev-container">
+        <div class="dev-header">
+          <div class="dev-buttons dev-red"></div>
+          <div class="dev-buttons dev-yellow"></div>
+          <div class="dev-buttons dev-green"></div>
+        </div>
+        <div class="dev-main">
+          <p>Дорогая хоумпаженька, сделанная где-то на окраине Москвы, ты стала иконой Состояния и зеркалом духовной войны. Мне жаль, что госпожа Тьма так часто прерывала наш аптайм. Больше десяти лет я заботился о тебе как о лучшем творении и было таково.</p>
+          <p>На том и стоим.</p>
+          <p>Ты так похорошела после Ношимо, что я ответственно дарую тебе титул сайта.</p>
+          <p>Торжественно <del>пере</del>запускаемся и выходим на уровень следующей Легенды.</p>
+          <p class="dev-window">Версия 4.25 сборка 161220</p><!-- 16-12-2020 15:29:18 | 8:20 25.05.2020 -->
+          <p class="dev-window">Сайт взлетел за %learn_JS%<span id="dev-load"></span></p>
+          <p class="dev-window">Гостевой билет № <!--LiveInternet logo--><a href="//www.liveinternet.ru/click"
+            target="_blank"><img src="//counter.yadro.ru/logo?18.1"
+            title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня"
+            alt="" style="border:0" width="88" height="31"/></a><!--/LiveInternet--></p>
+          <p class="dev-enter">><span class="dev-cursor effect-cursor">_</span></p>
+        </div>
+      </div>
+    </div>
+    <div id="avemarine" class="avemarine">
+      <div class="avemarine-header effect-switch" title="«Марина-а-а, Аве Марина!»"></div>
+      <div class="avemarine-main">
+        <p>Давным-давно я что-то там хотел себе доказать. Мол, смогу ли за пару недель накодить игру с нуля до сотни?</p>
+        <p>И вообще, это должен был быть долгожданный Party Shooter, а получились какие-то лодки...</p>
+        <p>Прошло так много времени, что веб-версия сломалась, видать, что-то в свежих браузерах подкрутили, а лицензия на продажу в стиме уже стоит восемь тысяч.</p>
+        <p>Ну что, пускаю исходники в свободное плавание, может найдётся герой, который спасёт эту тонущую историю.</p>
+        <p>Глядишь, чего вместе додумаем, ведь ядро вполне себе боевое.</p>
+        <p>Всплываем!</p>
+        <p>Последняя рабочая версия: <a href="../lock">Avemarine1.3.exe</a></p>
+        <p>Проект: <a href="../lock">Avemarine.zip</a></p>
+        <p>ГитХаб: <a href="https://github.com/SefoNotasi">github.com/SefoNotasi/Avemarine</a></p>
+      </div>
+    </div>
+    <div id="birth" class="birth">
+      <div class="birth-left"></div>
+      <div class="birth-header effect-light-white">
+        <p><span class="brand">Сефо</span><span class="age">(&nbsp;&nbsp;11&nbsp;&nbsp;)</span><span class="brand">Нотаси</span></p>
+      </div>
+      <div class="birth-main effect-shadow-white">
+        <p>Знойный летний день 2009 года.</p>
+        <p>Раздаётся гудок.</p>
+        <p>Помните?</p>
+        <p>Бронепоезд. Чертовски Бронированный и Святой, который мчался на встречу аварии.</p>
+        <p>Знаете, что за день сегодня?</p>
+        <p>Корабль, который потерпел крушение. Судно, чьё брюхо вспороли рифы. Капитан тонул с вытянутой рукой и показывал неприличный жест.</p>
+        <p>Назовите эту дату, ну же!</p>
+        <p>Нас выбросило на остров. Мы возвели летучий хрустальный замок и взлетели на облаках. Боже, почему никто не сказал, что это была худшая идея? Ведь он был настолько хрупкий, что при первом же ударе рассыпался на глазах.</p>
+        <p>Раздается громкий хлопок.</p>
+        <p>Мы упали, но не разбились. Мы оставляли за собой след из пустых бутылок и окурков. Наш путь был настолько деструктивен, что...</p>
+        <p>Пробка вылетает из бутылки с шампанским.</p>
+        <p>Рифы, шторм, чайки. Проклятые чайки, они хотели склевать лицо! Кыш!</p>
+        <p>День, в котором мы обязаны поднять бокалы и выпить.</p>
+        <p>Путь разрушения во имя прекрасного и абсолютно совершенного.</p>
+        <p>Раздаётся звон бокалов.</p>
+        <p>Невероятное путешествие и история о том, как Тьма поглощала нас, а мы бросили ей вызов в ответ, чтобы обрести Свет.</p>
+        <p>Выпьем!</p>
+        <p>Кто бы мог подумать, что мы зайдём так далеко...</p>
+        <p>Я с вами, а вы со мной.</p>
+        <p>Спасибо, ревернас.</p>
+      </div>
+      <div class="birth-right"></div>
+    </div>
+    <div id="card" class="card">
+      <div class="card-header effect-rotate-hover-2">
+        <p>Как вам новая визитка, отпад, не так ли? Ну в самом деле, не логотип же очередной сюда лепить. <a href="mailto:sefonotasi@gmail.com">SefoNotasi@gmail.com</a></p>
+      </div>
+    </div>
+    <div id="city" class="city">
+      <div class="city-header effect-switch effect-light-white">Ношимвиль</div>
+      <div class="city-main">
+        <div class="city-container">
+          <p>Здесь внезапно заканчивалось предыдущее путешествие. Да, именно так и никак иначе. Всё, это был полный ФИН, пускались титры. Всемогущий тормозил планету. Население колеблелось в пределах от полутора до двух человек. Тем посвящалось, кто приходил, уходил и шума много натворил.</p>
+          <p>Ныне город мёртв, билборд и вырви-глазную карусель снесли.</p>
+          <p>И как это могло занять тогда три месяца? Пожимаю плечами. Зато исходники позволили мне полностью перезапустить всё за три дня. А вы говорили, что мои бекапы — это шиза. Всегда и везде сохраняйте наработки, даже сырые и черновые. Сделайте копию своего добра прямо сейчас! Потом разберётесь и скажите спасибо.</p>
+          <p>Ну что, по всей видимости, наша следующая остановка — Нотавиль?</p>
+        </div>
+      </div>
+    </div>
+    <div id="bar" class="bar">
+      <div class="bar-header effect-flash-clear"></div>
+      <div class="bar-footer">
+        <p class="effect-light-green">N<span class="effect-flash-green-01">o</span><span class="effect-hide-04">s</span>himo<span class="effect-flash-green-03">'s</span> B<span class="effect-flash-green-02">a</span>r</p>
+        <p class="effect-light-red">CLOSED</p>
+      </div>
+      <div class="bar-main">
+        <p>Последнее, что успел сделать Ношимо перед тем, как склеить ласты. Как и многое другое, бар закрылся, не успев принять даже первого посетителя. Жуткое, мрачное, противное место, в котором какие-то уж совсем чернушные попойки проходили. Думаю, что принцип и правила здесь достаточно очевидны...</p>
+        <h1>Караоке</h1>
+        <ul id="bar-menu">
+          <li><a href="#song-1">Олеся — Прыгай вниз</a></li>
+          <li><a href="#song-2">Flëur — Шелкопряд</a></li>
+          <li><a href="#song-3">Елена Фролова — Не улетай ввысь</a></li>
+        </ul>
+        <h1 id="song-1" class="bar-singer">Олеся — Прыгай вниз</h1>
+        <p><audio controls>
+          <source src="../data/music/jump.mp3" type="audio/mpeg; codecs=mp3" />
+          <a href="../data/music/jump.mp3">Господи, твой позорный браузер даже в музыку не может. Ладно, так уж и быть, качай.</a>
+        </audio></p>
+        <div class="bar-song">
+          <p>С неба падают слезы, слезы ночного дождя,</p>
+          <p>Ветер куда-то уносит, куда-то зовет меня;</p>
+          <p>А я стою на крыше и сверху смотрю на жизнь,</p>
+          <p>Которую я так ненавижу, которую я так люблю.</p>
+          <hr />
+          <p>Прыгай вниз прыгай вниз не бойся,тихо шепчет мне в душу дождь,</p>
+          <p>Прыгай вниз и не беспокойся о том, куда ты попадешь.</p>
+          <p>Прыгай вниз прыгай вниз не бойся, твоя жизнь сплошная ложь,</p>
+          <p>Прыгай вниз и ни о чем не беспокойся все равно когда-нибудь умрешь.</p>
+          <hr />
+          <p>Вечер, лишь сигареты тихо гаснет уголек,</p>
+          <p>Согревая своим светом, свет, — который так жесток,</p>
+          <p>И выходит дым из легких, превращаясь в капли дождя;</p>
+          <p>В этот вечер никто не укроет никто, тебя от дождя.</p>
+          <hr />
+          <p>Прыгай вниз прыгай вниз не бойся,тихо шепчет мне в душу дождь,</p>
+          <p>Прыгай вниз и не беспокойся о том, куда ты попадешь.</p>
+          <p>Прыгай вниз прыгай вниз не бойся, твоя жизнь сплошная ложь,</p>
+          <p>Прыгай вниз и ни о чем не беспокойся все равно когда-нибудь умрешь.</p>
+          <hr />
+        </div>
+        <p id="song-2"><a href="#bar-menu">Опрокинуть рюмку ↑</a></p>
+        <h1 class="bar-singer">Flëur — Шелкопряд</h1>
+        <p><audio controls>
+          <source src="../data/music/fleur.mp3" type="audio/mpeg; codecs=mp3" />
+          <a href="../data/music/fleur.mp3">Господи, твой позорный браузер даже в музыку не может. Ладно, так уж и быть, качай.</a>
+        </audio></p>
+        <div class="bar-song">
+          <p>Я незаметно на дереве в листьях</p>
+          <p>Наполняю жизнь свою смыслом,</p>
+          <p>Пряду свою тонкую нить.</p>
+          <p>Нас очень много на дереве рядом,</p>
+          <p>И каждый рожден шелкопрядом,</p>
+          <p>И прядет свою тонкую нить.</p>
+          <hr />
+          <p>А моря до краёв наполнялись по каплям,</p>
+          <p>И срослись по песчинкам камни,</p>
+          <p>Вечность — это, наверно, так долго.</p>
+          <p>Мне бы только мой крошечный вклад внести,</p>
+          <p>За короткую жизнь сплести</p>
+          <p>Хотя бы ниточку шёлка.</p>
+          <hr />
+          <p>Кто-то в паутину религий попался,</p>
+          <p>Кто-то бредит пришельцами с Марса,</p>
+          <p>Я пряду свою тонкую нить.</p>
+          <p>Кто-то открывает секрет мироздания,</p>
+          <p>Кто-то борется с твёрдостью камня,</p>
+          <p>Я пряду свою тонкую нить.</p>
+          <hr />
+          <p>А моря до краёв наполнялись по каплям,</p>
+          <p>И срослись по песчинкам камни,</p>
+          <p>Вечность — это, наверное, так долго.</p>
+          <p>Мне бы только мой крошечный вклад внести,</p>
+          <p>За короткую жизнь сплести</p>
+          <p>Хотя бы ниточку шёлка.</p>
+          <hr />
+          <p>Я не умею чего-то ещё,</p>
+          <p>Я маленький червячок,</p>
+          <p>Мир безумный проносится мимо.</p>
+          <p>А мы создаём своими руками</p>
+          <p>Невесомые тонкие ткани,</p>
+          <p>Красота вполне ощутима.</p>
+          <hr />
+          <p>А моря до краёв наполнялись по каплям,</p>
+          <p>И срослись по песчинкам камни,</p>
+          <p>Вечность — это, наверно, так долго.</p>
+          <p>Мне бы только мой крошечный вклад внести,</p>
+          <p>За короткую жизнь сплести</p>
+          <p>Хотя бы ниточку шёлка.</p>
+          <p>А моря до краёв наполнялись по каплям,</p>
+          <p>И срослись по песчинкам камни,</p>
+          <p>Вечность — это, наверное, так долго.</p>
+          <p>Мне бы только мой крошечный вклад внести,</p>
+          <p>За короткую жизнь сплести</p>
+          <p>Хотя бы ниточку шёлка.</p>
+          <hr />
+        </div>
+        <p id="song-3"><a href="#bar-menu">Опрокинуть рюмку ↑</a></p>
+        <h1 class="bar-singer">Елена Фролова — Не улетай ввысь</h1>
+        <p><audio controls>
+          <source src="../data/music/fly.mp3" type="audio/mpeg; codecs=mp3" />
+          <a href="../data/music/fly.mp3">Господи, твой позорный браузер даже в музыку не может. Ладно, так уж и быть, качай.</a>
+        </audio></p>
+        <div class="bar-song">
+          <p>Не улетай ввысь.</p>
+          <p>Не убегай вдаль.</p>
+          <p>Хоть по ночам снись —</p>
+          <p>Нежной тоской жаль.</p>
+          <hr />
+          <p>Ранит стрелой мрак.</p>
+          <p>Вырвет из рук крик.</p>
+          <p>Не уходи так,</p>
+          <p>Не исчезай вмиг.</p>
+          <hr />
+          <p>Слов золотых звон</p>
+          <p>Перекричит бред.</p>
+          <p>Я сторожу сон</p>
+          <p>Там, где тебя нет.</p>
+          <hr />
+          <p>Не улетай: знай —</p>
+          <p>Мир без тебя пуст.</p>
+          <p>Даже родной Рай</p>
+          <p>Не оживит чувств.</p>
+          <hr />
+          <p>Будет в глуши лет</p>
+          <p>Жаркий огонь стыть.</p>
+          <p>Там, где тебя нет,</p>
+          <p>Я не хочу быть.</p>
+          <hr />
+          <p>Не улетай ввысь.</p>
+          <p>Не убегай вдаль.</p>
+          <p>Хоть по ночам снись —</p>
+          <p>Нежной тоской жаль.</p>
+          <hr />
+          <p>Не улетай ввысь.</p>
+          <p>Не убегай вдаль.</p>
+          <p>Не улетай...</p>
+          <p>Не убегай...</p>
+          <hr />
+          <p>Не улета-а-а-а-а-ай...</p>
+          <hr />
+        </div>
+        <p><a href="#bar-menu">Опрокинуть рюмку ↑</a></p>
+      </div>
+    </div>
+    <div id="noise" class="side">
+      <div class="side-main">
+        <blockquote>И выпали наружу все внутренности мои.</blockquote>
+        <cite>17.11.2012</cite>
+      </div>
+      <div class="side-right effect-switch" title="Этого места нет на карте"></div>
+    </div>
+    <div id="time" class="time">
+      <div class="time-two" title="1/9">
+        <p><span class="time-live">♥</span> <span class="time-he">♥ ♥ ♥</span> <span class="time-kill">♥ ♥ ♥ ♥ ♥</span></p>
+      </div>
+      <div class="time-three effect-rotate-back" title="Третья обречённость">-10%</div>
+      <div id="expires" class="time-main effect-blink" title="Одновременно может работать лишь один таймер">10•158•09:54:38.779</div>
+      <div class="time-six effect-rotate-clock" title="Четвёртая иллюзия">×2</div>
+      <div class="time-seven effect-rotate-back" title="Первый кошмар">÷2</div>
+      <div class="time-nine effect-rotate-back" title="Второй удар">-3•</div>
+    </div>
+    <div id="rip" class="rip">
+      <div class="rip-header" title="Legend R1"></div>
+      <div class="rip-main">
+        <div class="rip-container">
+          <h1>Его звали...</h1>
+          <h1>Ему посвящается...</h1>
+          <p>Садитесь...</p>
+          <p>Садитесь, дамы и господа.</p>
+          <p>Да, благодарю, благодарю всех присутствующих, да, да.</p>
+          <p>Садитесь, садитесь.</p>
+          <p>Итак, мы собрались здесь, на этой странице...</p>
+          <p>Да, да, мадам, входите, конечно же...</p>
+          <p>Ты тоже, не прячься, не стесняйся, входи и присаживайся, виновница торжества.</p>
+          <p>Мы собрались сегодня на этой странице, чтобы почтить память нашего четверокрылого Ангела. Безымянного и Безликого. Любящего мужа...</p>
+          <p>Что?</p>
+          <p>Ох, простите, я совсем забыл, что покойный не был женат...</p>
+          <p>Точно, у покойника даже верной возлюбленной не было, какая скорбь.</p>
+          <p>Да.</p>
+          <p>Мы собрались здесь, на этой странице, чтобы почтить память нашего любимца.</p>
+          <p>Выдающийся сценический образ. Достойный уход со сцены.</p>
+          <p>Ну да...</p>
+          <p>Упомянутый отправился в путь и не вернулся.</p>
+          <p>Предан и брошен.</p>
+          <p>Ему даже личные вещи не вернули, какая мерзость.</p>
+          <p>Да.</p>
+          <p>Я лично знал его, могу сказать, что нигде и никогда мне не доводилось видеть столь страдальческого создания.</p>
+          <p>Что же...</p>
+          <p>Да.</p>
+          <p>Он не был плохим или хорошим, он был терпимым. Он пожертвовал всем своим временем ради продолжения времени моего. Он настоящий Герой.</p>
+          <p>Люди окрестили его Легендой.</p>
+          <p>И приложу я все усилия, дабы жертва его не была прозрачной. Моё несчастное чадо, бедное дитя, лучшее творение. Я продолжу эту эстафету, которая передаётся из поколения в поколение. Я сохраню семейные традиции.</p>
+          <p>Мы ведь одна большая Семья, помните?</p>
+          <p>Сколько раз крылья его отрезали, сколько раз распяли его, всегда, слышите, он всегда вставал на ноги и расправлял крылья новые. Его духовные поля сжигали, и он взращивал новые, ещё гуще, насыщенные душистым хмелём и ячменём. Его мечты разбивали, но он продолжал бороться и возводил целые замки на облаках. Его предавали, стреляли прямо в сердце и он, нет, вы не поверите... И он ни разу не занял место безбожного циника. Его Солнце угасало, но он сохранял тлеющие угольки надежды...</p>
+          <p>Что ж...</p>
+          <p>Я породил его, я и исполню его последнюю волю, вырежу лицо, дабы разум его смог отправиться в глубины вселенной для поиска нового, сияющего мира, в котором мы непременно встретимся и опрокинем парю рюмок.</p>
+          <p>Путешествуй безмятежно...</p>
+          <p>Титулованная Легенда первого ранга.</p>
+          <p>Явление его, подобно второму пришествию Иисуса Христа, всегда сопровождалось тлеющими частицами Сердца Оригами, но...</p>
+          <p>Но, что это?</p>
+          <p>Этого...</p>
+          <p>Этого просто не может быть.</p>
+          <p>Невозможно!</p>
+          <p>Нет, я не верю.</p>
+          <p>Я не верю собственным глазам.</p>
+          <p>Чудо из чудес в небесах!</p>
+          <p>Ты тоже видишь это?</p>
+          <p>С неба мягко начали падать хлопья белого снега.</p>
+          <p>Аминь.</p>
+        </div>
+      </div>
+      <div class="rip-footer">
+        <div class="effect-fire"></div>
+      </div>
+    </div>
+    <div id="browser" class="browser">
+      <div class="browser-header" title="— Сносите его, ребята!"></div>
+      <div class="browser-main">
+        <p>Помимо бородатых шуток, лиса до сих пор не умеет в анимацию background-image. Я верстать начал, когда HTML 5 и Edge не было в природе, а лиса до сих пор хуже всех отрисовывает сайт. Что не так с людьми, которые топят за неё? Вроде всегда шутили про старого лагучего-багучего осла с костылями, а она в 2020 не умеет в современные технологии. Если она якобы кушает на 30% меньше рама, чем хром, то она и работает на 30% ХУЖЕ, чем хром, алло!</p>
+        <p>Посмотри для наглядности как безупречно выводит этот сайт хром. Ну не может быть хорошим браузер с ободранной лисой в логотипе от компании с названием МАЗИЛА.</p>
+        <p>Сносите к чертям этот блохастый мусор!</p>
+        <p>Вот это мне напекло, блин, нафиг.</p>
+      </div>
+    </div>
+    <div id="error" class="error">
+      <div class="error-header"></div>
+      <div class="error-main">
+        <table>
+          <tr>
+            <td colspan="2">A problem has been detected and system has been shut down to prevent damage to your mind.</td>
+          </tr>
+          <tr>
+            <td colspan="2">The problem seems to be caused by the following file: Emerald_Queen.exe</td>
+          </tr>
+          <tr>
+            <td>Loading version</td><td>4.0 build 250520</td>
+          </tr>
+          <tr>
+            <td>Loading brain.sys</td><td>ОК</td>
+          </tr>
+          <tr>
+            <td>Loading hands.dll</td><td>ОК</td>
+          </tr>
+          <tr>
+            <td>Loading heart.exe</td><td>Damaged</td>
+          </tr>
+          <tr>
+            <td>Loading soul.cfg</td><td>Corrupted</td>
+          </tr>
+          <tr>
+            <td>Loading memory.inf</td><td>ОК</td>
+          </tr>
+          <tr>
+            <td>Loading voice.lib</td><td>ОК</td>
+          </tr>
+          <tr>
+            <td>Emerald Queen:</td><td>Do you remember me, cocksucker?</td>
+          </tr>
+          <tr>
+            <td>Emerald Queen:</td><td>Processing...</td>
+          </tr>
+          <tr>
+            <td>Emerald Queen:</td><td>Not found 404</td>
+          </tr>
+          <tr>
+            <td>Emerald Queen:</td><td>Don't fuck with me!</td>
+          </tr>
+          <tr>
+            <td colspan="2">If you will try to restart your mind, press F5.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="wish" class="wish">
+      <div class="wish-header effect-switch" title="Один видит реальность, а другой — Иной мир"></div>
+      <div class="wish-main">
+        <p>Отпускаю, слышите, отпускаю вымогательское принудительное обещание из дремучего рассказа о том, что нужно его опубликовать, если что-то пойдёт не так. Это было подло, низко и нечестно.</p>
+        <p>Отпускаю, всё, едем дальше.</p>
+        <p>Я просто надеюсь, что это произойдёт во сне, во мне не будут копаться после и не закопают на корм червям.</p>
+        <p>Пожалуйста, кремируйте.</p>
+        <p>И никогда не грустите, ну что за глупые традиции? Наоборот, добротно отмочите пачку чёрных шуток и опрокиньте вдоволь рюмки.</p>
+        <p>И что ещё за глупость всем всё прощать напоследок? Прощать нужно по делу и за поступки.</p>
+        <p>Любил всех искренне.</p>
+        <p>Ненавидел тоже.</p>
+        <p>Увидимся в другом мире.</p>
+        <p>Пока-пока.</p>
+      </div>
+      <div class="wish-side"></div>
+    </div>
+    <div id="rights" class="rights">
+      <div class="rights-main">
+        <p>Уф, вот мы и докрутили до самого конца. Наше путешествие плавно подходит к завершению.</p>
+        <p>Это дно сайта, но не конец истории.</p>
+        <p>Ну и напоследок, вы ведь заметили, что чего-то не хватает. То, что раньше было на каждой странице, без чего было тяжело дышать. Горячо любимый мною, чёртов старый добрый копирайт.</p>
+        <p>Давай-давай, наваливай понажористей, чтоб весь экран заплыл.</p>
+        <p>Расчехляй мерзавца!</p>
+        <h1>© 2009–∞ Сефо Нотаси</h1>
+        <p>Да, отныне без запятой — это самое скандальное решение 2020 года. Даже копирайт затюнин до предела. Надеюсь, что вы тоже зарядились эмоциями до предела от нашего безумного путешествия сквозь время и пространство.</p>
+        <p>Уверен, что вскоре мы пробьём и этот рубеж, и будем скроллить бесконечно.</p>
+        <p>Разрушители пределов.</p>
+        <p>И если мне станет очень плохо, то я зайду сюда, чтобы дойти до конца и получить самые главные ответы:</p>
+        <p>«Пожалуйста, знай, что всё не напрасно».</p>
+        <p>«Если ты сделал это, то справишься и с остальным».</p>
+        <p>«Любовь уничтожит всё».</p>
+        <p>А затем я замечу, что внизу появилось что-то ещё...</p>
+      </div>
+    </div>
+    <div id="sign" class="sign">
+      Посвящается бессмертной любви всей моей жизни.
+    </div>
+    <script src="../site/scripts/common_volume.js"></script>
+  </body>
+</html>
+<!--
+Награда за пиксель-хантинг, прямиком из 24 марта 2012 года:
+***
+У нас свой мир,
+Иные божества, театр,
+В нём каждый день:
+Играют сцены, чудеса,
+В нем каждый зритель,
+Выходя на сцену —
+Становится неразделимым целым,
+Вокруг пестрящие афиши,
+Интерес и спрос —
+Не угасают никогда,
+В нем все играют,
+В том числе и я,
+Кто-то вынужден,
+А другие наслаждаясь,
+Кто не понимает,
+И не желает разделять,
+Нас вскоре осуждая, покидает,
+Мы не ради ценностей,
+И денег здесь играем,
+Мы — Персонажи,
+Мы — Семья,
+Наш дом — Театр,
+Он возведён Безликим и двумя,
+«Фавориты» между нами говоря,
+Им изначально роли даровали,
+Затем и образы даны,
+Писатель и Актёр,
+Вы ведь слышали о нём?
+Стоит за кулисы нам пройти,
+И Безликого найти,
+Как на пути к нему — они,
+Так и повелось,
+Никто не смог дойти...
+***
+И это ещё не всё, продолжение следует в...
+-->

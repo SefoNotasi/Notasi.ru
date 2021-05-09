@@ -1,0 +1,52 @@
+@charset "utf-8";
+/*
+
+*/
+
+/* common-reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-spacing: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background: #000;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.keyhole {
+  width: 300px;
+  height: 300px;
+  background: url(../design/lock_logo.png) no-repeat fixed center;
+  opacity: .9;
+  transition: 1s;
+}
+
+.keyhole:hover {
+  background-image: url(../design/lock_logo_hover.png);
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(2);
+}
+
+/* GOD MODE */
+/*
+* {
+  border: solid 1px #0f0;
+}
+*/
+
+/*
+
+*/
