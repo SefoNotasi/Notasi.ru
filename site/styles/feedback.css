@@ -1,0 +1,153 @@
+@charset "utf-8";
+/*
+Вы верили в меня, а я верил в вас.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-spacing: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: #000;
+    text-align: center;
+    font: 2.5vw Arial, Verdana, Helvetica, sans-serif;
+}
+
+#header,
+.content {
+    padding: 1vw;
+}
+
+img {
+    max-width: 100%;
+    margin: .3vw;
+    vertical-align: top;
+}
+
+#header img {
+    max-width: 95%;
+    --angle: 0deg;
+    border: .5vw solid;
+    border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+    animation: 10s rotate linear infinite;
+}
+
+.total {
+    margin-bottom: 10vw;
+    font-size: 8vw;
+}
+
+a {
+    word-wrap: break-word;
+}
+
+.road {
+    margin-top: 10vw;
+    overflow: hidden;
+}
+
+.road p {
+    width: max-content;
+    padding-left: 100%;
+    /* Show the marquee just outside the paragraph. */
+    will-change: transform;
+    animation: marquee 20s linear infinite;
+    font-size: 5vw;
+    line-height: .9;
+}
+
+.road:hover p {
+    animation-play-state: paused;
+}
+
+.road:hover .cat {
+    transform: scale(-1, 1);
+}
+
+.cat {
+    display: inline-block;
+    transition: ease .3s;
+}
+
+.babies {
+    font-size: 2.5vw;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 2.5vh;
+    }
+
+    #header,
+    .content {
+        padding: 1vh;
+    }
+
+    img {
+        margin: .3vh;
+    }
+
+    #header img {
+        border: .5vh solid;
+    }
+
+    .total {
+        margin-bottom: 10vh;
+        font-size: 8vh;
+    }
+
+    .road {
+        margin-top: 10vh;
+    }
+
+    .road p {
+        font-size: 5vh;
+    }
+
+    .babies {
+        font-size: 2.5vh;
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .road p {
+        width: auto;
+        padding-left: 0;
+        animation-iteration-count: 1;
+        animation-duration: .01s;
+    }
+}
+
+@keyframes rotate {
+    to {
+        --angle: 360deg;
+    }
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+/* GOD MODE */
+/* * { border: solid 1px #0f0; } */
+
+/*
+Котёна ёжика с ежатами вела.
+*/

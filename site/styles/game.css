@@ -1,0 +1,255 @@
+@charset "utf-8";
+/*
+
+*/
+
+/* common-reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-spacing: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+@font-face {
+  font-family: Shooter;
+  src: url(../fonts/shooter.ttf);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font: 50px Arial, Verdana, Helvetica, sans-serif;
+}
+
+a,
+a:link,
+a:hover,
+a:active,
+a:focus,
+a:visited,
+.music,
+.logo,
+.accent,
+blockquote:before,
+blockquote:after {
+  color: #f00;
+}
+
+a,
+a:link,
+a:hover,
+a:active,
+a:focus,
+a:visited {
+  border-bottom: solid 3px;
+}
+
+a,
+a:link,
+a:hover,
+a:active,
+a:focus,
+a:visited,
+.logo:hover,
+video:hover,
+.screens img:hover {
+  --angle: 0deg;
+  border-image: conic-gradient(from var(--angle), #f00, #000, #f00, #000, #f00, #000, #f00) 1;
+  animation: 10s rotate linear infinite;
+}
+
+.page {
+  animation: flash 3s infinite;
+}
+
+.page,
+.pistol,
+.rifle {
+  animation-play-state: paused !important;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, .7);
+  padding-bottom: 10px;
+  font-size: 30px;
+  z-index: 1;
+}
+
+.header,
+h1,
+.time,
+.screens,
+.quote,
+.footer {
+  text-align: center;
+}
+
+.header,
+.header a:link,
+.header a:hover,
+.header a:active,
+.header a:focus,
+.header a:visited
+.pistol,
+.rifle,
+.image,
+.image:link,
+.image:hover,
+.image:active,
+.image:focus,
+.image:visited {
+  border: none;
+  outline: 0;
+}
+
+.music,
+.logo {
+  cursor: pointer;
+}
+
+.main {
+  padding: 150px;
+}
+
+.right {
+  text-align: right;
+}
+
+.pistol {
+  animation: 10s clockwise infinite linear;
+}
+
+h1 {
+  font: 100px Shooter;
+}
+
+.logo,
+video,
+.screens img {
+  transition: 1s;
+}
+
+.logo:hover {
+  border-bottom: 15px solid;
+}
+
+.run {
+  animation-play-state: running !important;
+}
+
+.rifle {
+  animation: 10s clockwise infinite linear reverse;
+}
+
+.info p {
+  padding-bottom: 25px;
+  color: #E6E6E6; /* RGB 90% */
+}
+
+.time,
+.quote {
+  font-size: 70px;
+}
+
+.time {
+  font-family: Consolas, "Lucida Console", Monaco, monospace;
+}
+
+video,
+.screens img {
+  min-width: 70%;
+  max-width: 100%;
+  border: 1px solid transparent;
+}
+
+.quote {
+  margin: 150px;
+  font-style: italic;
+  transform: rotate(-5deg);
+}
+
+blockquote:before,
+blockquote:after {
+  font-weight: bolder;
+}
+
+blockquote:before {
+  content: "“";
+}
+
+blockquote:after {
+  content: "”";
+}
+
+/* flash — раскадровка вспышки по краям экрана */
+@keyframes flash {
+  0% {
+    /* Side H-offset V-offset Blur Size Color */
+    box-shadow: none;
+  }
+  25% {
+    box-shadow: inset 10px 0 10px 5px rgba(255, 0, 0, .7);
+  }
+  50% {
+    box-shadow: none;
+  }
+  75% {
+    box-shadow: inset -10px 0 10px 5px rgba(255, 0, 0, .7);
+  }
+}
+
+/* clockwise — раскадровка вращения по часовой */
+@keyframes clockwise {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* rotate — раскадровка для вращения градиента */
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+/* angle — свойство для вращения градиента */
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+/* effect-blink — анимация плавного мерцания прозрачностью */
+.effect-blink {
+  animation: blink 1s linear infinite;
+}
+
+/* blink — раскадровка плавного мерцания прозрачностью */
+@keyframes blink {
+  50% {
+    opacity: .5;
+  }
+}
+
+/* GOD MODE */
+/*
+* {
+  border: solid 1px #0f0;
+}
+*/
+
+/*
+
+*/

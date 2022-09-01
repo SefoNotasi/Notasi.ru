@@ -1,0 +1,197 @@
+@charset "utf-8";
+/*
+
+*/
+
+/* common-reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-spacing: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font: 50px Arial, Verdana, Helvetica, sans-serif;
+}
+
+a,
+a:link,
+a:hover,
+a:active,
+a:focus,
+a:visited {
+  color: #fff;
+  border-bottom: solid 3px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#rays {
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.header {
+  padding: 300px 25px 1000px 25px; /* bottom: 700px */
+}
+
+h1,
+h2,
+h3,
+.back {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+summary,
+.back {
+  white-space: nowrap;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+h2, h3 {
+  font-size: 60px;
+}
+
+h2,
+.quote {
+  font-style: italic;
+}
+
+.main,
+.comment,
+.back {
+  padding: 25px;
+}
+
+details {
+  padding-left: 50px;
+}
+
+details[open] summary ~ * {
+  animation: sweep .2s ease-out;
+}
+
+summary {
+  display: inline;
+  border-bottom: dashed 3px;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+li {
+  list-style-type: disc;
+}
+
+.hide,
+.text {
+  opacity: .8;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: auto;
+  gap: 25px;
+  padding: 25px 50px;
+  font-size: 25px;
+}
+
+.comment,
+.donate:hover {
+  border-radius: 25px;
+  transition: .2s;
+}
+
+.comment:hover {
+  background-color: #2C3539; /*	Gunmetal */
+  transform: scale(1.1);
+}
+
+.comment a,
+.comment a:link,
+.comment a:hover,
+.comment a:active,
+.comment a:focus,
+.comment a:visited {
+  border-bottom: solid 2px;
+}
+
+.donate {
+  border: solid 3px;
+  border-radius: 0;
+}
+
+.name,
+.quote,
+.text,
+.file {
+  margin-bottom: 25px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.reply,
+.quote {
+  opacity: .4;
+}
+
+del {
+	text-decoration: solid line-through; /* 2px; Value Error 2px is not a text-decoration value */
+}
+
+.date {
+  text-align: right;
+  opacity: .6;
+}
+
+.footer {
+  height: 1024px;
+  background: url(../design/rip_blade.png) no-repeat scroll center bottom;
+  padding-top: 1000px;
+}
+
+/* sweep — анимация появления */
+@keyframes sweep {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .content {
+    grid-template-columns: auto;
+  }
+}
+
+/* GOD MODE */
+/*
+* {
+  border: solid 1px #0f0;
+}
+*/
+
+/*
+
+*/

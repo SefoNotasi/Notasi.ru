@@ -1,0 +1,91 @@
+<!--
+Триня.
+-->
+<!doctype html>
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Primary Meta Tags -->
+    <title>Sefo Notasi | Trinket</title>
+    <meta name="title" content="Sefo Notasi | Trinket">
+    <meta name="description" content="Небезделуй, тринькуй!">
+    <!-- Old meta -->
+    <meta name="keywords"
+        content="Сефо, Нотаси, СефоНотаси, безделушка, аксессуар, тринкет, триня, тринкта, сайт, домашняя, страница, Sefo, Notasi, SefoNotasi, trinket, accessory, trinkta, site, homepage">
+    <meta name="author" content="Сефо Нотаси">
+    <meta name="generator" content="Блокнот и руки 1.0">
+    <!-- Viewport -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta content='true' name='HandheldFriendly'>
+    <meta content='width' name='MobileOptimized'>
+    <meta content='yes' name='apple-mobile-web-app-capable'>
+    <!-- Viewport -->
+    <link rel="stylesheet" href="../site/styles/trinket.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../site/favicon/apple-touch-icon.png?v=rMB8jvoPyJ">
+    <link rel="icon" type="image/png" sizes="32x32" href="../site/favicon/favicon-32x32.png?v=rMB8jvoPyJ">
+    <link rel="icon" type="image/png" sizes="16x16" href="../site/favicon/favicon-16x16.png?v=rMB8jvoPyJ">
+    <link rel="manifest" href="../site/favicon/site.webmanifest?v=rMB8jvoPyJ">
+    <link rel="mask-icon" href="../site/favicon/safari-pinned-tab.svg?v=rMB8jvoPyJ" color="#21a038">
+    <link rel="shortcut icon" href="../site/favicon/favicon.ico?v=rMB8jvoPyJ">
+    <meta name="msapplication-TileColor" content="#21a038">
+    <meta name="msapplication-config" content="../site/favicon/browserconfig.xml?v=rMB8jvoPyJ">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169837023-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-169837023-1');
+    </script>
+</head>
+
+<body>
+    <!-- Yandex.Metrika counter -->
+    <script>
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(62728024, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/62728024" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <div class="time"><span id="time-digital"></span> | <span id="time-analog"></span></div>
+    <div class="date"><span id="date-digital"></span> | <span id="date-analog"></span></div>
+    <div class="timer"><span id="timer">00:00:00</span> | <a id="timer-start">Start</a> <a id="timer-pause">Pause</a> <a
+            id="timer-resume">Resume</a> <a id="timer-reset">Reset</a> <a id="timer-restart">Restart</a></div>
+    <div class="player">
+        <div class="control">
+            <audio id="player"></audio>
+            <p><a id="play" onClick="play()">Play</a> <a id="pause" onClick="pause()">Pause</a> <a id="stop"
+                    onClick="stop()">Stop</a></p>
+            <p><a id="prev">Prev</a> <a id="random">Random</a> <a id="next">Next</a></p>
+            <p><a id="back" onClick="back()">Back</a> <a id="mute" onClick="mute()">Mute</a> <a id="forward"
+                    onClick="forward()">Forward</a></p>
+            <p><a id="volume-down" onClick="volumeDown()">Down</a> Vol <span id="volume">0%</span> <a id="volume-up"
+                    onClick="volumeUp()">Up</a></p>
+            <p><span id="current">00:00</span> / <span id="duration">00:00</span></p>
+        </div>
+        <div class="cd"><img id="cd" src="cd.png" alt="CD"></div>
+    </div>
+    <p class="home"><a href="../" title="Home">Notasi.ru</a> / Trinket</p>
+    <script src="../site/scripts/trinket.js"></script>
+</body>
+
+</html>
+<!--
+«ТРИНКТА, ТРИНКТА!!!».
+-->

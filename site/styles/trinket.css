@@ -1,0 +1,196 @@
+@charset "utf-8";
+/*
+«Укуси меня слепой пёс 😳 Как круто, стильно, первый раз такое вижу!» © Alexey Arkhipov.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-spacing: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font: 4vw Consolas, "Lucida Console", Monaco, monospace;
+    padding: 5vw;
+    /* old 5% */
+}
+
+.home a,
+.home a:link,
+.home a:visited {
+    color: red;
+}
+
+.home a,
+.home a:active,
+.home a:focus,
+.home a:visited {
+    border-bottom: solid .3vw;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+    cursor: pointer;
+    transition: ease .3s;
+}
+
+.time {
+    color: #0f0;
+}
+
+.date {
+    color: #0ff
+}
+
+.timer,
+.timer a,
+.timer a:link,
+.timer a:visited {
+    color: yellow;
+}
+
+.player,
+.player a,
+.player a:link,
+.player a:visited {
+    color: darkorange;
+}
+
+.timer a,
+.timer a:link,
+.timer a:active,
+.timer a:focus,
+.timer a:visited,
+.player a,
+.player a:link,
+.player a:active,
+.player a:focus,
+.player a:visited {
+    border-bottom: dashed .3vw;
+}
+
+.home a:hover,
+.home a:active,
+.home a:focus,
+a:hover,
+a:active,
+a:focus {
+    color: #fff;
+}
+
+a:hover,
+a:active,
+a:focus {
+    border-bottom: none;
+}
+
+.time,
+.date,
+.timer,
+.player {
+    margin-bottom: 5vw;
+}
+
+.player {
+    display: flex;
+}
+
+.control {
+    margin-right: 5vw;
+}
+
+#cd {
+    max-width: 100%;
+    animation: 5s clockwise infinite linear;
+    animation-play-state: paused;
+}
+
+.play {
+    animation-play-state: running !important;
+}
+
+.home {
+    color: red;
+    text-align: right;
+}
+
+/* clockwise — раскадровка вращения по часовой */
+@keyframes clockwise {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 3vh;
+        /* orig 4vw, old 2.5vh */
+        padding: 3vh;
+        /* orig 5vw, lower VH 4 mobile screen */
+    }
+
+    .home a,
+    .home a:active,
+    .home a:focus,
+    .home a:visited {
+        border-bottom: solid .3vh;
+    }
+
+    .timer a,
+    .timer a:link,
+    .timer a:active,
+    .timer a:focus,
+    .timer a:visited,
+    .player a,
+    .player a:link,
+    .player a:active,
+    .player a:focus,
+    .player a:visited {
+        border-bottom: dashed .3vh;
+    }
+
+    .time,
+    .date,
+    .timer,
+    .player {
+        margin-bottom: 3vh;
+    }
+
+    .control {
+        margin-right: 3vh;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* GOD MODE */
+/* * { border: solid 1px #0f0; } */
+
+/*
+«Тринькуем, сегодня мы с тобой тринькуем!».
+*/

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Host: notasi.ru
+Sitemap: https://notasi.ru/sitemap.xml
